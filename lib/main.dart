@@ -64,14 +64,17 @@ GlobalKey<CircularWheelState> _keyWeight = GlobalKey<CircularWheelState>();
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: CircularWheel(
-            key: _keyWeight,
-            initVal: controller.weightHq.value,
-            type: "${controller.weightUnit.value.toLowerCase()}",
-            onChanged: (val) {
-              
-            },
-          ), // This trailing comma makes auto-formatting nicer for build methods.
+      body: Container(
+        margin: const EdgeInsets.all(20),
+        child: CircularWheel(
+              key: _keyWeight,
+              initVal: controller.weightHq.value,
+              type: "${controller.weightUnit.value.toLowerCase()}",
+              onChanged: (val) {
+                
+              },
+            ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 

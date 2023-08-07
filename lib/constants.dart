@@ -7,3 +7,4 @@ HexColor buttonBgColor = HexColor("#E77817");
 HexColor primaryTextColor = HexColor("#252525");
 HexColor borderColor = HexColor("#EAEAEA");
 HexColor secondaryTextColor = HexColor("#9E9E9E");
+HexColor colorBlue = HexColor("#00305A");
